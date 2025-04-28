@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Marcel Gokil</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+  <body class="gradient-background">
+    <nav>
+      <div class="title"><h2>Web punya Marcel</h2></div>
+      <div class="navigation">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/projects">Projects</a></li>
+          <li><a href="/about">About Me</a></li>
+          <li><a href="/contacts">Contacts</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    {% block content %}{% endblock %}
+  </body>
+</html>
